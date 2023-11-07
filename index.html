@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./player.css">
+    <title>music</title>
+</head>
+
+<body>
+    <div class="song-progress-container">
+    </div>
+    <div class="song-info-container">
+        <div class="style_images">
+            <img class="cover-image" data-amplitude-song-info="cover_art_url" style="border-radius:30px;" />
+        </div>
+        <span class="amplitude-current-minutes" style="font-family:Century Gothic;color: white;"></span>:<span
+            class="amplitude-current-seconds" style="font-family:Century Gothic; color: white;"></span>
+        <progress class="amplitude-song-played-progress"></progress>
+        <span class="amplitude-duration-minutes" style="font-family:Century Gothic;color: white;"></span>:<span
+            class="amplitude-duration-seconds" style="font-family:Century Gothic;color: white;"></span><br>
+        <span data-amplitude-song-info="name"
+            style="font-weight:bold;font-family:Century Gothic; font-size: 20px; color: white;"></span><br>
+        <span data-amplitude-song-info="composed" style="font-weight:bold;font-family:Century Gothic; color: white;"></span><br>
+        <span data-amplitude-song-info="artist" style="font-weight:bold;font-family:Century Gothic; color: white;"></span>
+    </div>
+    <div class="controls">
+            <div style="padding-right:10px;">
+                <div class="amplitude-radom" style="margin-bottom:5px;"></div>
+            </div>
+            <div style="padding-right:10px;">
+                <div class="amplitude-prev"></div>
+            </div>
+            <div class="style_play_pause" style="margin-top:10px">
+                <div class="amplitude-play-pause"></div>
+            </div>
+            <div style="padding-left:10px;">
+                <div class="amplitude-next"></div>
+            </div>
+            <div style="padding-left:10px;">
+                <div class="amplitude-repeat_song" style="margin-bottom:5px;"></div>
+            </div>
+        <br>
+        <div class="amplitude-mute"></div>
+        <input type="range" class="amplitude-volume-slider" />
+        <div class="amplitude-stop"></div>
+    </div>
+
+</body>
+<script src="./node_modules/amplitudejs/dist/amplitude.js"></script>
+<script src="./player.js"></script>
+
+</html>
